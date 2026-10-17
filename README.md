@@ -1,11 +1,12 @@
 DHCP Configuration on a Router Lab
+
 Overview
 
 Built on top of the previous two-network routing lab (Lab 3), this lab configures a router to act as a DHCP server for two separate networks. Instead of manually assigning static IP addresses to each PC, the router automatically distributes IP addresses to all devices, simulating how real office networks operate.
 
 Network Topology
 
-Show Image
+
 
 Environment
 Component	Details
