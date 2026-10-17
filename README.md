@@ -113,7 +113,7 @@ This command displays a table of every IP address the router has handed out and 
 ### Connectivity Test — ping
 Ran ping between PCs across both networks to confirm DHCP did not break routing:
 
-![Ping Verification](https://github.com/liamalexirwin/Configuring-DHCP-On-A-Router/blob/main/Screenshots/ping-test.png.png)
+![Ping Verification](https://github.com/liamalexirwin/Configuring-DHCP-On-A-Router/blob/main/Screenshots/ping-test.png)
 
 PC1 successfully pinged PC3 (192.168.2.1) across networks, confirming full connectivity was maintained after switching from static to DHCP. ✅
 
