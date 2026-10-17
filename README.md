@@ -6,7 +6,7 @@ Built on top of the previous two-network routing lab (Lab 3), this lab configure
 
 Network Topology
 
-https://github.com/liamalexirwin/Configuring-DHCP-On-A-Router/blob/main/Screenshots/Screenshot%20(61).png
+Topology.png
 
 Environment
 
