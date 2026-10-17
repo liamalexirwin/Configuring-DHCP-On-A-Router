@@ -101,7 +101,7 @@ Ran ipconfig on each PC to confirm DHCP assigned addresses correctly:
 
 ![PC3 DHCP IP Configuration](https://github.com/liamalexirwin/Configuring-DHCP-On-A-Router/blob/main/Screenshots/pc3-dhcp-config.png)
 
-PC3 received **192.168.2.2** automatically from the router, confirming the DHCP pool for Network B was working correctly.
+PC3 received **192.168.2.1** automatically from the router, confirming the DHCP pool for Network B was working correctly.
 
 ### Router Side — show ip dhcp binding
 Verified all IP assignments from the router CLI:
@@ -115,7 +115,7 @@ Ran ping between PCs across both networks to confirm DHCP did not break routing:
 
 ![Ping Verification](https://github.com/liamalexirwin/Configuring-DHCP-On-A-Router/blob/main/Screenshots/ping-test.png.png)
 
-PC1 successfully pinged PC3 (192.168.2.2) across networks, confirming full connectivity was maintained after switching from static to DHCP. ✅
+PC1 successfully pinged PC3 (192.168.2.1) across networks, confirming full connectivity was maintained after switching from static to DHCP. ✅
 
 ## Router DHCP Commands Reference
 ```
