@@ -4,7 +4,7 @@
 Built on top of the previous two-network routing lab (Lab 3), this lab configures a router to act as a **DHCP server** for two separate networks. Instead of manually assigning static IP addresses to each PC, the router automatically distributes IP addresses to all devices, simulating how real office networks operate.
 
 ## Network Topology
-![Network Topology](screenshots/topology.png)
+![Network Topology](https://github.com/liamalexirwin/Configuring-DHCP-On-A-Router/blob/main/Topology.png)
 
 ## Environment
 | Component | Details |
