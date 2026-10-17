@@ -99,7 +99,7 @@ Each PC displayed a DHCP request successful message and automatically received:
 ### PC Side — ipconfig
 Ran ipconfig on each PC to confirm DHCP assigned addresses correctly:
 
-![PC3 DHCP IP Configuration](https://github.com/liamalexirwin/Configuring-DHCP-On-A-Router/blob/main/Screenshots/pc3-dhcp-config.p)
+![PC3 DHCP IP Configuration](https://github.com/liamalexirwin/Configuring-DHCP-On-A-Router/blob/main/Screenshots/pc3-dhcp-config.png)
 
 PC3 received **192.168.2.2** automatically from the router, confirming the DHCP pool for Network B was working correctly.
 
