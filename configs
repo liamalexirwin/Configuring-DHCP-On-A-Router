@@ -1,1 +1,72 @@
+-MANUAL CONFIGURATION PRE DHCP-
 
+OUTER- 
+GbE0/0- ip adress 192.168.1.254 255.255.255.0
+GbE0/1- ip address 192.168.2.254 255.255.255.0
+
+SWITCH A- GbE0/1 TO GbE0/0 ON ROUTER 
+
+SWITCH B- GbE0/1 TO GbE0/1 ON ROUTER
+
+PC 1 To FE0/1 ON SWITCH A 
+IP-192.168.1.1
+SUBMASK-255.255.255.0
+GATE-192.168.1.254
+
+PC 2 To FE0/2 ON SWITCH A 
+IP-192.168.1.2
+SUBMASK-255.255.255.0
+GATE-192.168.1.254
+
+PC 3 To FE0/1 ON SWITCH B
+IP-192.168.2.1
+SUBMASK-255.255.255.0
+GATE-192.168.2.254
+
+PC 4 To FE0/2 ON SWITCH B
+IP-192.168.2.2
+SUBMASK-255.255.255.0
+GATE-192.168.2.254
+
+-DHCP CONFIGURATION-
+
+NETWORK A
+-Router CLI 
+
+-ip dhcp pool NETWORK-A
+
+-network 192.168.1.0 255.255.255.0
+
+-default-router 192.168.1.254
+
+-dns-server 8.8.8.8
+
+-exit
+
+NETWORK B
+-Router CLI
+
+-ip dhcp pool NETWORK-B
+
+-network 192.168.2.0 255.255.255.0
+
+-default-router 192.168.2.254
+
+-dns-server 8.8.8.8
+
+-exit
+
+Excluding the Routers on ip address 
+
+-ip dhcp excluded-address 192.168.1.254
+-ip dhcp excluded-address 192.168.2.254
+
+Setting the PCs to DHCP
+-PC1, 2, 3, 4,- Desktop- IP Configuration- selcect DHCP 
+
+Test to see the new IPs of each computer with ipconfig in command prompt
+
+verify on the router side in CLI
+- show ip dhcp binding- to see if each computer got it a designated ip
+
+Run ping command to each coomputer to check if connection is still working after setting up dhcp
